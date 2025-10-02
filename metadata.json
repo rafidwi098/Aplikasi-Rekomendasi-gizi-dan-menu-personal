@@ -1,0 +1,5 @@
+{
+  "name": "Aplikasi Rekomendasi Gizi & Menu Personal",
+  "description": "An AI-powered health application that provides personalized recipe recommendations based on your available ingredients, medical history, and nutritional needs.",
+  "requestFramePermissions": []
+}

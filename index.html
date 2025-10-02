@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NutriAI Recipe Recommender</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes slideInUp {
+        from {
+          transform: translateY(100%);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+      
+      @keyframes bubblePop {
+        from {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #ffffff; /* Fallback color */
+        background-image: url('https://videos.openai.com/vg-assets/assets%2Ftask_01k6dtxbetf6naw301vg1mmdr5%2F1759253651_img_0.webp?st=2025-09-30T15%3A56%3A10Z&se=2025-10-06T16%3A56%3A10Z&sks=b&skt=2025-09-30T15%3A56%3A10Z&ske=2025-10-06T16%3A56%3A10Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=aa5ddad1-c91a-4f0a-9aca-e20682cc8969&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=6cZZL2vXLeRuzRzmUGQXeWZBSOvVqgHLfxDu8m9eJFU%3D&az=oaivgprodscus');
+        background-repeat: repeat;
+        background-attachment: fixed; /* Makes the pattern stay in place while scrolling */
+        overflow-x: hidden;
+      }
+      
+      html {
+        scroll-behavior: smooth;
+      }
+      .animate-fadeInUp {
+        animation: fadeInUp 0.8s ease-out forwards;
+      }
+      .animate-slideInUp {
+        animation: slideInUp 0.3s ease-out forwards;
+      }
+      .animate-bubblePop {
+        animation: bubblePop 0.2s ease-out forwards;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.21.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
